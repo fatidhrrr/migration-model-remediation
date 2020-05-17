@@ -9,15 +9,11 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-white" href="">Auteur</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link text-white" href="{{route('viewTitre')}}">Titre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="">Texte</a>
+                <a class="nav-link text-white" href="{{route('viewTitre')}}">Show</a>
             </li>
-
         </ul>
     </div>
 </nav>

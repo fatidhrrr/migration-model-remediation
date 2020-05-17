@@ -50,7 +50,8 @@ class TitreController extends Controller
      */
     public function show($id)
     {
-        //
+        $titres=Titre::find($id);
+        return view("show", compact('titres'));
     }
 
     /**

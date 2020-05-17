@@ -10,13 +10,6 @@
             <form action="{{route('saveTitre')}}" method="POST" class="contactForm ">
                 @csrf
                 <div class="form-row">
-                    {{-- <div class="form-group col-md-6">
-                        <select name="name" id="" class="form-control">
-                            @foreach ($albums as $item)
-                        <option value="{{$item->name}}">{{$item->name}}</option>
-                            @endforeach
-                        </select>
-                    </div> --}}
                     <div class="form-group col-md-6 mx-auto">
                         <input type="titre" class="form-control" name="titre" id="titre" placeholder="titre"
                             data-rule="titre" data-msg="" />

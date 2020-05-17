@@ -30,6 +30,7 @@
                     <td>
                         <a href='{{route('editTitre', $item)}}' class='btn btn-warning'>Edit</a>
                         <a href='{{route('deleteTitre', $item)}}' class='btn btn-danger'>Delete</a>
+                        <a href='{{route('show', $item)}}' class='btn btn-danger'>Show</a>
                     </td>
                     </tr>
                     @endforeach

@@ -20,6 +20,7 @@ Route::get('/', function () {
 // Titre
 
 Route::get('/viewTitre', 'TitreController@index')->name('viewTitre');
+Route::get('/show/{id}',"TitreController@show")->name("show");
 Route::get('/addTitre', "TitreController@create")->name('addTitre');
 Route::post("/saveTitre", "TitreController@store")->name("saveTitre");
 Route::get('/editTitre/{id}', "TitreController@edit")->name("editTitre");
