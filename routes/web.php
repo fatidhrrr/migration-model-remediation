@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Titre
+
+Route::get('/viewTitre', 'TitreController@index')->name('viewTitre');
+Route::get('/addTitre', "TitreController@create")->name('addTitre');
+Route::post("/saveTitre", "TitreController@store")->name("saveTitre");
+Route::get('/editTitre/{id}', "TitreController@edit")->name("editTitre");
+Route::post('/updateTitre/{id}', "TitreController@update")->name("updateTitre");
+Route::get("/deleteTitre/{id}", "TitreController@destroy")->name("deleteTitre");
